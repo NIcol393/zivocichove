@@ -1,0 +1,53 @@
+
+body {
+    background-color: #e6f9e6; /* hodně světlá zelená */
+}
+h1, h2 {
+    position: relative;
+    display: inline-block;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 20px;
+}
+
+h1::after, h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #4caf50; /* tmavší zelená pro podtržení */
+    border-radius: 10px;
+}
+
+.animal-gallery {
+  display: flex;        /* obrázky vedle sebe */
+  justify-content: center;
+  gap: 20px;            /* mezera mezi obrázky */
+  margin-bottom: 20px;
+}
+
+.animal-item {
+  text-align: center;   /* zarovnání na střed */
+}
+
+.animal-item img {
+  width: 200px;         /* obrázek má 200px široký */
+  margin-bottom: 10px;  /* mezera pod obrázkem */
+}
+
+.animal-item a {
+  color: green;         /* zelený odkaz */
+  font-weight: bold;    /* tučný text */
+  text-decoration: none; /* bez podtržení */
+  border-bottom: 3px solid green; /* zelená čára pod odkazem */
+  padding-bottom: 3px;
+}
+
+.animal-item a:hover {
+  color: darkgreen;     /* barva při najetí myši */
+  border-color: darkgreen;
+}
+
+
